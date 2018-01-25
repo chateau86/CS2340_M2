@@ -33,7 +33,7 @@ ja         * @param pname the person's real name
             //Person 4 put your implementation here
             StringBuffer outBuffer = StringBuffer(input.length());
             for(char c: input){
-                outBuffer.append(c + 1)
+                outBuffer.append(c + 1);
             }
             return outBuffer.toString();
         }
