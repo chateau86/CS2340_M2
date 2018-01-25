@@ -29,10 +29,17 @@ public class Person2 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
-	}
+	 private String calc(String input) {
+	    //Person 2 put your implementation here
+	    StringBuffer sb = new StringBuffer(input);
+	    for(int i = 0; i < 1000; i++) {
+	      int random = (int) Math.random()*sb.length();
+	      char c = sb.charAt(random);
+	      sb.deleteCharAt(random);
+	      sb.append(c);
+	    }
+	    return sb.toString();
+	  }
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
@@ -44,4 +51,5 @@ public class Person2 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
+	
 }
