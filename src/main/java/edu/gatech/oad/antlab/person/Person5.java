@@ -32,11 +32,11 @@ public class Person5 {
 	private String calc(String input) {
 	  //Person 5 put your implementation here
       String result = "";
-      for (int i = 2; i < input.length; i++) {
-        result += charAt(i);
+      for (int i = 2; i < input.length(); i++) {
+        result += input.charAt(i);
       }
-      result += charAt(0);
-      result += charAt(1);
+      result += input.charAt(0);
+      result += input.charAt(1);
 	  return result;
 	}
 

@@ -11,11 +11,11 @@ package edu.gatech.oad.antlab.person;
 public class Person4 {
     /** Holds the persons real name */
     private String name;
-        /**
-         * The constructor, takes in the persons
-         * name
-ja         * @param pname the person's real name
-         */
+    /**
+     * The constructor, takes in the persons
+     * name
+     * @param pname the person's real name
+     */
     public Person4(String pname) {
         name = pname;
     }
@@ -31,9 +31,9 @@ ja         * @param pname the person's real name
          */
         private String calc(String input) {
             //Person 4 put your implementation here
-            StringBuffer outBuffer = StringBuffer(input.length());
-            for(char c: input){
-                outBuffer.append(c + 1);
+            StringBuffer outBuffer = new StringBuffer(input.length());
+            for(char c: input.toCharArray()){
+                outBuffer.append((char)(c + 1));
             }
             return outBuffer.toString();
         }
